@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "887c7dfa-a0c4-4645-906f-ea549bce599b",
+		"name": "KOTLIN-crud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "HelloPrimeiroTeste",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/HelloPrimeiroTeste",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"HelloPrimeiroTeste"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Mensagens",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/mensagem",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mensagem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Mensagem por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/mensagem/60ce560f94f9aa75725d6382d",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mensagem",
+						"60ce560f94f9aa75725d6382d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Mensagem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"aaaaa\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/mensagem",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mensagem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Mensagen por id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \n    \"id\":\"60ce5c97dd3a0441e93ffddb\",\n    \"title\": \"teste \"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/mensagem/60ce560f94f9aa75725d6382d",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mensagem",
+						"60ce560f94f9aa75725d6382d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Enviar MSg AWS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"5c1c9a5b7cc1a642a2c7dddddd6c12\",\n    \"title\": \"the Lord of the Ring\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/aws",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"aws"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Mensagem por id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \n    \"title\": \"teste \"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/mensagem/60ce5f46a4beeb4a71603d64d",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mensagem",
+						"60ce5f46a4beeb4a71603d64d"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
