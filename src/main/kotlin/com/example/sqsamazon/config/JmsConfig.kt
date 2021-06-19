@@ -19,9 +19,9 @@ import javax.jms.Session
 @EnableJms
 class JmsConfig {
 
-    private val accessKey: String? = "AKIA57IXW34RNUSLKMXE"
+    private val accessKey: String? = "XXXX"
 
-    private val secretKey: String? = "7cateT6cMdC1g16w5FigQ+vXMEA19q+FraFlmVUY"
+    private val secretKey: String? = "XXXXS"
 
     @Autowired
     private val connectionFactory: SQSConnectionFactory? = null
